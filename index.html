@@ -7,11 +7,20 @@
     <meta name="keywords" content="Kirill, resume, cv">
     <meta name="description" content="Это сайт - резюме Кирилла!">
     <title>Resume</title>
-</head>
-<body>
-    <img src="Выборг1.jpg" width="350" alt="Фото Кирилла">
+    <link rel="stylesheet" href="styles.css">
 
+</head>
+
+
+<div class="container">
+    <div class="info">
+    
+        <img src="Выборг1.jpg" class="avatar" alt="Фото Кирилла">
+    
+    <div class="info-text">
     <h1>Кирюша Михалыч</h1>
+
+<div class="descr">
 
     <p>Кирюша родился 26 октября 2001 года.</p>
 
@@ -21,24 +30,32 @@
 
     <p><strong>Список социальных сетей:</strong></p>
 
-    <a href="https://www.instagram.com/yakyrill" target="_blank">Instagram</a>
+    <div class="links">
+    <a href="https://www.instagram.com/yakyrill"  target="_blank">Instagram</a>
     |
-    <a href="https://tlgg.ru/omicon" target="_blank">Telegram</a>
+    <a href="https://tlgg.ru/omicon"  target="_blank">Telegram</a>
 |
-    <a href="https://vk.com/omicon" target="_blank">ВКонтакте</a>
+    <a href="https://vk.com/omicon"  target="_blank">ВКонтакте</a>
+</div>
+</div>
+</div>
+</div>
 <br><br><br>
+<div class="card bg-green">
 <h2>Мои хобби:</h2>
-<ol>
+<ol class="list">
     <li>Футбол</li>
     <li>Видеогейминг</li>
     <li>Путешествия</li>
 </ol>
+</div>
 
 <br>
 
+<div class="card bg-salmon">
 <h3>Опыт работы</h3>
 
-<table>
+<table class="table">
     <thead>
         <tr>
         <th>Название компании</th>
@@ -64,27 +81,36 @@
 </tr>
     </tbody>
 </table>
-
-<h3>Связаться со мной</h3>
-
-<form>
-<div>
-    <label for="name">Ваше имя</label>
-    <input type="text" id="name" placeholder="Введите имя">
 </div>
 
-<div>
-    <label for="email">Ваш Email</label>
-    <input type="email" id="email" placeholder="Введите email">
-</div>
-
-
-    <label for="message">Ваше Сообщение</label>
-    <br>
-    <textarea id="message" cols="25" rows="5" placeholder="Введите Ваше сообщение..."></textarea>
 <br>
+<div class="card bg-yellow">
 
-<button type="submit">Отправить!</button>
+
+<form action="/" class="form">
+    <h3>Связаться со мной</h3>
+<div class="form-row">
+    <div class="form-group">
+        <label for="name">Ваше имя</label>
+        <input type="text" id="name" placeholder="Введите имя">
+    </div>
+
+    <div class="form-group">
+        <label for="email">Ваш Email</label>
+        <input type="email" id="email" placeholder="Введите email">
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="message">Ваше Сообщение</label>
+    <!-- <br> -->
+    <textarea id="message" cols="25" rows="5" placeholder="Введите Ваше сообщение..."></textarea>
+</div>
+    <br>
+
+<button type="submit" class="btn">Отправить!</button>
+</div>
+</div>
 </form>
 
 </body>
